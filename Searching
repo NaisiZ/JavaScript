@@ -1,0 +1,20 @@
+//This is a practice for searching a specific string in certain content using for loop and array
+var text = "Hey, how are you \
+doing? My name is Nelson. If you\
+don't know me, I am the Nelson-The ZEN, Native \
+Hohhoter";
+var myName = "Nelson";
+var hits = [];
+for (var i=0; i<text.length; i++){
+    if (text[i] === 'N'){
+      for ( var j=i; j< (i+myName.length); j++){
+    hits.push(text[j]) }
+    }
+
+}
+
+if (hits === 0) {
+    "Your name wasn't found!"
+} else {
+    console.log(hits)
+}
